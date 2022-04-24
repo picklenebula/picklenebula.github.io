@@ -4,6 +4,43 @@ html {
     background-color: #3c3639;
 }
 
+#githublink {
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    color: #e7af3f;
+    padding: 2px 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 0px 0px 0px -2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#githublink:hover {
+    color: #cc6aba;
+}
+
+#btncenter {
+    text-align: center;
+}
+
+#mobilebutton {
+    display: inline-block;
+    border: 1px solid antiquewhite;
+    background-color: none;
+    color: #e7af3f;
+    padding: 15px 40px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 40px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
@@ -17,7 +54,7 @@ html {
 #header1 {
     text-align: center;
     margin-bottom: 10px;
-    margin-top: -10px;
+    margin-top: 0px;
     text-shadow: 3px 3px 1px black;
     color: #e7af3f;
     animation: fadeInAnimation ease 1s;
@@ -59,17 +96,17 @@ html {
     color: antiquewhite;
 }
 
-#topnav{
-    text-align: left;
+#topnav {
+    text-align: center;
     margin-left: -35px;
 }
 
-#topnav li{
+#topnav li {
     display: inline;
 }
 
 #topnav a {
-    padding: 5px 20px;
+    padding: 8px 20px;
     margin-top: 10px;
     color: #e7af3f;
     text-decoration: none;
@@ -157,10 +194,41 @@ S #myBtn:hover {
     /* Add a dark-grey background on hover */
 }
 
-/* center nav on mobile */
+/* mobile opt */
 
-@media only screen and (max-width: 600px){
-    #topnav{
+@media only screen and (max-width: 600px) {
+    #topnav {
         text-align: center;
+        font-size: small;
+        margin-top: 25px;
+
+    }
+
+    #topnav a {
+        padding: 10px 10px;
+    }
+
+    #header1 {
+        font-size: x-small;
+        margin-top: 20px;
+    }
+
+    #paragraph1 {
+        font-size: smaller;
+    }
+
+    #paragraph2 {
+        font-size: smaller;
+    }
+
+    #githublink {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (min-width: 601px) {
+    #mobilebutton{
+        display: none;
     }
 }
