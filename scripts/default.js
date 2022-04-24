@@ -21,3 +21,10 @@
                 behavior: 'smooth'
             });
         }
+
+        function copyFunction() {
+            navigator.clipboard.writeText("pixie#1984");
+
+            /* Alert the copied text */
+            alert("Copied the text: " + copyText.value);
+        }
