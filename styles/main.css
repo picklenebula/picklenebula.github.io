@@ -137,7 +137,7 @@ html {
     margin-top: 10px;
     color: #e7af3f;
     text-decoration: none;
-    transition-duration: 0.5s;
+    /*transition-duration: 0.5s;*/
     border-radius: 4px;
     text-transform: uppercase;
 }
