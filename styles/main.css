@@ -48,15 +48,11 @@ html {
     border-radius: 6px;
     border: none;
     outline: inherit;
-    transition: 0.2s;
+    transition: 0.1s;
 }
 
 #copybutton:hover {
     background-color: #c2902e;
-}
-
-#copybutton:focus{
-    background-color: darkolivegreen;
 }
 
 #mobilebutton {
@@ -224,11 +220,11 @@ a:hover {
     /* Place the button 30px from the right */
     z-index: 99;
     /* Make sure it does not overlap */
-    border: none;
+    border: 2px solid black;
     /* Remove borders */
     outline: none;
     /* Remove outline */
-    background-color: #372b52c7;
+    background-color: #372b52;
     /* Set a background color */
     color: white;
     /* Text color */
