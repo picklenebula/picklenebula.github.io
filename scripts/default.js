@@ -61,7 +61,7 @@ async function copyFunction() {
 
 // functions to show/hide different image galleries
 function showArt() {
-    containerArt.style.display = 'block'
+    containerArt.style.display = 'flex'
     containerFood.style.display = 'none'
     containerPics.style.display = 'none'
     document.getElementById('artBtn').textContent = '>ART<'
@@ -74,7 +74,7 @@ function showArt() {
 
 function showFood() {
     containerArt.style.display = 'none'
-    containerFood.style.display = 'block'
+    containerFood.style.display = 'flex'
     containerPics.style.display = 'none'
     document.getElementById('artBtn').textContent = 'ART'
     document.getElementById('foodBtn').textContent = '>FOOD<'
@@ -87,7 +87,7 @@ function showFood() {
 function showPics() {
     containerArt.style.display = 'none'
     containerFood.style.display = 'none'
-    containerPics.style.display = 'block'
+    containerPics.style.display = 'flex'
     document.getElementById('artBtn').textContent = 'ART'
     document.getElementById('foodBtn').textContent = 'FOOD'
     document.getElementById('picsBtn').textContent = '>PICS<'
