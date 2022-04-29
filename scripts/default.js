@@ -1,7 +1,7 @@
 //Sleep func
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
-  }
+}
 
 //Get the button
 var mybutton = document.getElementById("myBtn");
@@ -27,15 +27,36 @@ function topFunction() {
     });
 }
 
+
+var btnTriClicked = 0
+window.addEventListener('click', function (evt) {
+    if (evt.detail === 3) {
+        btnTriClicked = 1
+        document.getElementById('copybutton').innerHTML =
+            "copied!" + "<br>" + "<font size=-1>click me harder :D</font>";
+    }
+});
+
 async function copyFunction() {
     navigator.clipboard.writeText("pixie#1984");
-    document.getElementById("copybutton").style.backgroundColor = 'darkolivegreen';
-    document.getElementById('copybutton').textContent = "copied!";
-    await sleep(500);
-    document.getElementById('copybutton').style.transition = '2.2s';
-    document.getElementById("copybutton").style.backgroundColor = '#c2902e';
-    await sleep(500)
-    document.getElementById('copybutton').style.transition = '0.1s';
+    if (btnTriClicked == 0) {
+        document.getElementById("copybutton").style.backgroundColor = 'darkolivegreen';
+        document.getElementById('copybutton').textContent = "copied!";
+        await sleep(500);
+        document.getElementById('copybutton').style.transition = '2.2s';
+        document.getElementById("copybutton").style.backgroundColor = '#c2902e';
+        await sleep(500)
+        document.getElementById('copybutton').style.transition = '0.1s';
+    } else {
+        document.getElementById("copybutton").style.backgroundColor = 'darkolivegreen';
+        document.getElementById('copybutton').innerHTML =
+            "copied!" + "<br>" + "<font size=-1>click me harder :D</font>";
+        await sleep(500);
+        document.getElementById('copybutton').style.transition = '2.2s';
+        document.getElementById("copybutton").style.backgroundColor = '#c2902e';
+        await sleep(500)
+        document.getElementById('copybutton').style.transition = '0.1s';
+    }
 }
 
 // functions to show/hide different image galleries
