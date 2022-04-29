@@ -31,7 +31,7 @@ html {
     margin: -10px -10px -10px -10px;
 }
 
-#btncenter2 {
+#btncenterGit {
     text-align: center;
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
@@ -42,7 +42,7 @@ html {
     display: inline-block;
     margin-top: 25px;
     padding: 10px 10px;
-    background-color: #8d6b28;
+    background-color: #a07a2e;
     font-family: "Poppins";
     font-size: 22px;
     border-radius: 6px;
@@ -52,7 +52,7 @@ html {
 }
 
 #copybutton:hover {
-    opacity: 0.5;
+    background-color: #c2902e;
 }
 
 #copybutton:focus{
@@ -306,12 +306,16 @@ S #myBtn:hover {
     display: inline-block;
     margin-top: 25px;
     padding: 10px 10px;
-    background-color: #8d6b28;
-    color: antiquewhite;
+    background-color: #a07a2e;
+    color: black;
     font-family: "Poppins";
     font-size: 22px;
     border-radius: 6px;
     border: none;
     outline: inherit;
     transition: 0.2s;
+}
+
+.imageBtn:hover {
+    background-color: #c2902e;
 }
