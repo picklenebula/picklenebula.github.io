@@ -26,3 +26,23 @@
             navigator.clipboard.writeText("pixie#1984");
             document.getElementById('copybutton').textContent = "copied!";
         }
+
+        // functions to show/hide different image galleries
+        function showArt() {
+            containerArt.style.display = 'block'
+            containerFood.style.display = 'none'
+            containerPics.style.display = 'none'
+            artBtn.style.color = red
+        }
+
+        function showFood() {
+            containerArt.style.display = 'none'
+            containerFood.style.display = 'block'
+            containerPics.style.display = 'none'
+        }
+
+        function showPics() {
+            containerArt.style.display = 'none'
+            containerFood.style.display = 'none'
+            containerPics.style.display = 'block'
+        }
