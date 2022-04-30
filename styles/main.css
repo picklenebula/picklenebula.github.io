@@ -142,6 +142,7 @@ body {
     margin-top: 10px;
     color: #e7af3f;
     text-decoration: none;
+    transition-property: background-color;
     transition-duration: 2s;
     border-radius: 4px;
     text-transform: uppercase;
