@@ -4,6 +4,10 @@ html {
     background-color: #3c3639;
 }
 
+body {
+    width: calc(100vw - 34px);
+}
+
 #githublink {
     background-color: rgba(255, 255, 255, 0);
     border: none;
@@ -91,10 +95,10 @@ html {
 }
 
 #paragraph1 {
-    width: 60%;
+    max-width: 75%;
     text-align: center;
     margin: 0 auto;
-    padding: 10px 10px;
+    padding: 10px 10px 10px 10px;
     color: #f0deba;
     animation: fadeInAnimation ease 1s;
     animation-iteration-count: 1;
@@ -133,16 +137,17 @@ html {
 }
 
 #topnav a {
+    background-color: #3c3639;
     padding: 8px 20px;
     margin-top: 10px;
     color: #e7af3f;
     text-decoration: none;
-    /*transition-duration: 0.5s;*/
+    transition-duration: 0.5s;
     border-radius: 4px;
     text-transform: uppercase;
 }
 
-a:hover {
+#topnav a:hover {
     background-color: #8d6b28;
 }
 
@@ -245,7 +250,6 @@ a:hover {
         text-align: center;
         font-size: small;
         margin-top: 25px;
-
     }
 
     #topnav a {
