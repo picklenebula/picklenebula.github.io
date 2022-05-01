@@ -148,10 +148,6 @@ body {
     text-transform: uppercase;
 }
 
-#topnav a:hover {
-    background-color: #8d6b28;
-}
-
 .containerArt {
     max-width: 110rem;
     margin: 0 auto;
